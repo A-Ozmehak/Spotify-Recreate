@@ -1,0 +1,51 @@
+/*Laptop*/
+
+@media only screen and (max-width: 1200px) {
+
+   body > header {
+       padding: 0 2rem;
+   }
+
+   .spotify-logo {
+       height: 9rem;
+       width: 9rem;
+   }
+   
+    .main-container > h1 {
+        font-size: 90px;
+        padding-bottom: 0;
+        text-indent: 0;
+        width: 754px;
+        margin-right: 5rem;
+    }
+
+    .main-container > p {
+        margin-right: 2rem;
+        margin-left: 12rem;
+        width: 400px;
+    }
+
+    .main-container > button {
+        margin-right: 3rem;
+    }
+
+    footer > .nav-container {
+        margin: 0 auto;
+        width: 970px;
+    }
+
+    #footer-nav > .logo {
+        margin-left: 1rem;
+    }
+
+    #footer-nav > .nav-bar {
+        width: 475px;
+        margin-right: 9rem;
+    }
+
+    .footer-under > .info-nav {
+        padding-right: 10rem;
+    }
+
+    
+}

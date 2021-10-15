@@ -1,0 +1,266 @@
+/*Desktop*/
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /*Ändrade textsnitt för allt*/
+    body {
+        font-family: 'Montserrat', sans-serif;
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+
+    header {
+        font-size: 16px;
+        font-weight: 700;
+        width: 100%;
+        height: 5rem;
+        background-color: black;
+        padding: 0 10rem;
+    }
+
+    /*Texten och bilden i headern*/
+    .container {
+        color: #fff;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    /*En lista med texten i headern*/
+    .text-menu {
+        height: 5rem;
+        width: 33rem;
+        display: flex;
+    }
+
+    .li-style {
+        color: #d9dadc;
+    }
+
+    /*Ändrat position med flex på texten i headern*/
+    .text-menu ul {
+        width: 33rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        margin-left: 1rem;
+    }
+
+    .container img {
+        height: 2rem;
+        display: flex;
+    }
+
+    /*Har dolt iconen som bara syns under 992px*/
+    .mobile-menu {
+        display: none;
+    }
+
+    /*Här är backgrundsbilden för mainen. 
+    Vi har ändrat storleken och positionen på bilden för att det gröna ska hamna rätt*/
+    main {
+        background: rgb(41, 65, 171);
+        background-image: url("../img/bg-spotify676x901.png");
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: 200%;
+        background-position: 46% 4%;
+        background-position-x: 46%;
+        background-position-y: 4%;
+        
+    }
+    
+    /*Container är texten på mainen.
+    Vi har använt position absolute för att få texten på mainen att placera sig i relation med mainen och inte bodyn*/
+    .main-container {
+        position: absolute;
+        text-align: center;
+        top: 30%;
+        left: 50%;
+        transform: translateX(-50%);
+        color: green;
+        height: 500px;
+    }
+    
+
+    main img {
+        position: relative;
+    }
+
+    /*Ändrat texten i mainen till annan position, storlek och avstånd mellan varandra*/
+    h1 {
+        font-size: 130px;
+        font-weight: 900;
+        padding-bottom: 3rem;
+        color: #1ED760;
+        text-indent: -3.3em;
+        letter-spacing: -0.04em;
+    }
+
+    /*Undertexten i mainen*/
+    p {
+        font-size: 1.2rem;
+        padding-bottom: 3rem;
+        margin: 0 9rem 0 0;
+        color: #1ED760;
+    }
+
+    /*Knappen på mainen*/
+    button {
+        color: rgb(41, 65, 171);
+        background: #1ED760;
+        height: 3rem;
+        width: 13rem;
+        border-radius: 500px;
+        font-size: 0.9rem;
+        font-weight: 800;
+        text-transform: uppercase;
+        border: 0;
+        margin-right: 9rem;
+    }
+
+    button:hover {
+        color: #0c110e;
+    }
+
+    .background {
+        height: 100vh;
+        width: 100%;
+    }
+
+    /*Ändrade färg på list items och iconerna när man musar över dom för att få en länkeffekt*/
+    li:hover, .fas:hover, .fab:hover, .li-style:hover {
+        color: #1ED760;
+    }
+
+    /*Överrubrikerna i footern ska inte ha länkeffekt så vi byta färg bara*/
+    .footer-headline:hover {
+        color: #919496;
+    }
+
+    .header-line:hover {
+        color: white;
+    }
+
+    footer {
+        color: white;
+        background: black;
+        font-size: 0.7rem;
+        padding: 50px 0 10px 0;
+        
+    }
+
+    /*Allt innehåll i footern*/
+    .nav-container {
+        width: 1170px;
+        margin: 0 auto;
+    }
+
+    /*Delade upp bilden, texten och iconerna i grid för att lättare positionerna dom*/
+    #footer-nav {
+        display: grid;
+        grid-template-areas: "spotify-img footer-links footer-icons";
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    /*Spotify bilden i footern*/
+    .logo {
+        margin-left: 8rem;
+    }
+
+    .logo img {
+        width: 7rem;
+        height: 3rem;
+    }
+
+    /*Översta delen av texten i footern*/
+    .nav-bar {
+        height: 20rem;
+        display: flex;
+        width: 36rem;
+        margin: auto;
+        justify-content: space-between;
+    }
+
+    /*Översta listorna i footern*/
+    ul {
+        font-size: 15px;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        line-height: 40px;
+    }
+
+    /*Rubrikerna i footern*/
+    .footer-headline {
+        text-transform: uppercase;
+        font-size: 12px;
+        color: #919496;
+        font-weight: 900;
+    }
+
+    /*Iconerna i footern*/
+    .nav-icons {
+        font-size: 1.5rem;
+        display: flex;
+        justify-content: end;
+    }
+
+    /*Facebook iconen i footern, fick dela upp den för den var inte samma storlek*/
+    .fa-facebook-f {
+        width: 3rem;
+        font-size: 24px;
+    }
+
+    /*Iconerna i footern*/
+    .fab {
+        border: 15px solid rgb(36, 33, 33);
+        color: white;
+        border-radius: 50%;
+        background: rgb(36, 33, 33);
+        margin-right: 10px;
+        height: 3.3rem;
+    }
+
+    /*Jordglobs iconen och texten*/
+    .footer-side {
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 3rem;
+        color: #919496;
+        font-size: 0.8rem;
+    }
+
+    /*Undre text den av footern
+    Även den är uppdelat i två grid rutor för uppdelning*/
+    .footer-under {
+        list-style: none;
+        display: grid;
+        grid-template-areas: "information-nav copyright";
+        grid-template-rows: 1fr 1fr;
+        color: #919496;
+    }
+
+    /*Copyright iconen och texten*/
+    .copyright {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        margin-right: 3rem;
+    }
+
+    /*Informations länkar längst ner i footern*/
+    .info-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        font-size: 12px;
+        padding-right: 21rem;
+        padding-left: 0.7rem;
+    }

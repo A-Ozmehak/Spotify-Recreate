@@ -1,0 +1,127 @@
+/*tablet*/
+
+@media only screen and (max-width: 767px) {
+
+    * {
+        margin: 0;
+        border: 0;
+        box-sizing: border-box;
+    }
+  
+    body > header {
+        padding: 0 1rem;
+    }
+
+    header {
+        max-height: 54px;
+        overflow: hidden;
+    }
+
+    header > .container {
+        padding: 0;
+    }
+
+    .container > .text-menu {
+        width: 0;
+    }
+
+    .text-menu li{
+        display: none;
+    }
+
+    header > .container > .mobile-menu  {
+        display: flex;
+        font-size: 24px;
+    }
+
+    html > body > main {
+        overflow: hidden;
+    }
+
+    main > .main-container {
+        padding-top: 6rem;
+        width: 450px;
+    }
+
+    body > main > .main-container > h1 {
+        text-align: center;
+        text-indent: 0;
+        font-size: 76px;
+        width: 450px;
+        margin: 0;
+        line-height: 5rem;
+        padding-right: 2rem;
+    }
+
+    body > main > .main-container > p {
+        margin: 1rem 0 0 1rem;
+        font-size: 1rem;
+        padding-left: 0;
+    }
+
+    body > main > .main-container > button {
+        margin-right: 0;
+    }
+
+    footer {
+        padding: 50px 0 20px 0;  
+    }
+
+    html > body > footer > .nav-container {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .nav-container > #footer-nav {
+        grid: none;
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer > .nav-container > #footer-nav > .logo {
+        margin: 0 0 2.5rem 1rem;
+    }
+
+    footer > .nav-container > #footer-nav > .logo > img {
+        height: 2rem;
+        width: 4.5rem;
+    }
+
+    footer > .nav-container > #footer-nav > .nav-bar {
+        height: 40rem;
+        margin-left: 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-container > #footer-nav > .nav-icons {
+        margin: 7rem 0 1rem 0.5rem;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .nav-container > .footer-side {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 1.5rem;
+    }
+
+    .nav-container > .footer-under {
+        margin-left: 0.5rem;
+        grid: none;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nav-container > .footer-under > .info-nav {
+        font-size: 10px;
+    }
+
+    footer > .nav-container > .footer-under > .copyright {
+        margin: 0.2rem 1rem 0 0;
+        align-items: flex-start;
+        padding-top: 0.2rem;
+    }
+
+}

@@ -1,0 +1,113 @@
+/*large tablet*/
+
+@media only screen and (max-width: 991px) {
+
+    body {
+        overflow: auto;
+    } 
+
+    body > header {
+        height: 4rem;
+    }
+
+    .container {
+        padding: 0;
+    }
+
+    .container > .mobile-menu {
+        font-size: 1.5rem;
+    }
+
+    .container > .mobile-menu > .fa-bars {
+        height: 21px;
+        width: 24px;
+    }
+
+    .container > .spotify-logo {
+        height: 2rem;
+        width: 5rem;
+    }
+
+    .container > .text-menu {
+        display: none;
+    }
+
+    .container > .mobile-menu {
+        display: flex;
+    }
+
+    .main-container {
+        width: 700px;
+    }
+
+    main > .main-container > h1 {
+        line-height: 6rem;
+        text-indent: 0;
+        font-weight: 750;
+        width: 700px;
+        padding-right: 4rem;
+    }
+
+    main > .main-container > p {
+        margin: 1rem 0 0 7rem;
+    }
+
+    main > .main-container > button {
+        margin: 0 3rem 0 0;
+    }
+
+    body > footer > .nav-container {
+        margin: 0 auto;
+        width: 750px;
+    }
+
+    .nav-container > #footer-nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #footer-nav > .nav-icons {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .nav-container > #footer-nav > .logo {
+        margin-bottom: 3rem;
+        margin-left: 0;
+    }
+
+    #footer-nav > .logo > img {
+        height: 2rem;
+        width: 5rem;
+    }
+
+    .nav-container > #footer-nav > .nav-bar {
+        margin: 0 0 3rem 0;
+        width: 750px;
+    }
+
+    .nav-container > #footer-nav > .nac-icons {
+        margin-bottom: 4rem;
+    }
+
+    .nav-container > .footer-under {
+        grid: none;
+        display: flex;
+        align-content: flex-start;
+    }
+
+    .nav-container > .footer-under > .info-nav {
+        padding: 0 0 0 0;
+        width: 34rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .nav-container > .footer-under > .copyright {
+        display: flex;
+        align-self: flex-start;
+        margin: 0.5rem 0 0 5rem;
+    }
+    
+} 
